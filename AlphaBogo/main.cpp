@@ -7,12 +7,8 @@ using namespace std;
 int main()
 {
 	Game game;
-	std::vector<int> list = { 3,2,1 };
-	list = game.bogoSort(list);
-
-	for (int i = 0; i < list.size(); i++) {
-		std::cout << list[i] << std::endl;
-	}
+	game.run();
+	cin.get();
 	cin.get();
 	return 0;
 }
