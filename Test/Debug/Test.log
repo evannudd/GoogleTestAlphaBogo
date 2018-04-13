@@ -1,4 +1,2 @@
-﻿  test.cpp
-c:\users\evan\source\repos\alphabogo\test\test.cpp(15): warning C4018: '<': signed/unsigned mismatch
-c:\users\evan\source\repos\alphabogo\test\test.cpp(21): warning C4018: '<': signed/unsigned mismatch
+﻿AlphaBogo.lib(Game.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   Test.vcxproj -> C:\Users\Evan\source\repos\AlphaBogo\Debug\Test.exe

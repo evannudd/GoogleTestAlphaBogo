@@ -19,6 +19,42 @@ TEST(ListSort, AscendingInts) {
 	}
 }
 
+TEST(ListSort, IsSorted)
+{
+	Game game;
+
+	std::vector<int> list = { 0,1,2,3,4,5,6,7,8,9 };
+
+	ASSERT_TRUE(game.isSorted(list));
+
+}
+
+TEST(ListSort, UserFirst)
+{
+	Game game;
+
+	std::time_t userTime = 4;
+	std::time_t bogoTime = 7;
+
+	std::string fasterTime = game.getFasterTime(bogoTime, userTime);
+
+	ASSERT_EQ(fasterTime, "User did it faster!");
+
+}
+
+TEST(ListSort, BogoFirst)
+{
+	Game game;
+
+	std::time_t userTime = 7;
+	std::time_t bogoTime = 4;
+
+	std::string fasterTime = game.getFasterTime(bogoTime, userTime);
+
+	ASSERT_EQ(fasterTime, "Robo did it faster!");
+
+}
+
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
