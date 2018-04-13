@@ -1,3 +1,6 @@
-﻿  main.cpp
-c:\users\evan\source\repos\alphabogo\alphabogo\main.cpp(13): warning C4018: '<': signed/unsigned mismatch
-  AlphaBogo.vcxproj -> C:\Users\Evan\source\repos\AlphaBogo\Debug\AlphaBogo.exe
+﻿  Game.cpp
+c:\users\evan\source\repos\alphabogo\alphabogo\game.cpp(32): warning C4018: '<': signed/unsigned mismatch
+c:\users\evan\source\repos\alphabogo\alphabogo\game.cpp(39): warning C4102: 'std': unreferenced label
+c:\users\evan\source\repos\alphabogo\alphabogo\game.cpp(51): warning C4018: '<': signed/unsigned mismatch
+Game.obj : error LNK2019: unresolved external symbol "public: bool __thiscall Game::isSorted(class std::vector<int,class std::allocator<int> >)" (?isSorted@Game@@QAE_NV?$vector@HV?$allocator@H@std@@@std@@@Z) referenced in function "public: class std::vector<int,class std::allocator<int> > __thiscall Game::bogoSort(class std::vector<int,class std::allocator<int> >)" (?bogoSort@Game@@QAE?AV?$vector@HV?$allocator@H@std@@@std@@V23@@Z)
+C:\Users\Evan\source\repos\AlphaBogo\Debug\AlphaBogo.exe : fatal error LNK1120: 1 unresolved externals

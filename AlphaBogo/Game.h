@@ -13,8 +13,9 @@ public:
 
 	void start();
 	void run();
-	void userSort();
 
+	bool isSorted(std::vector<int> list);
+	std::vector<int> userSort();
 	std::vector<int> bogoSort(std::vector<int> list);
 	std::vector<int> sort(std::vector<int> list);
 };

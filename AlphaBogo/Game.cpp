@@ -40,20 +40,33 @@ void Game::run()
 	std::time_t totalUserTime = time_after - time_now;
 	
 	// time how long it takes for AlphaBogo to solve it.
-	std::time_t time_now = time(0);
+	std::time_t time_now1 = time(0);
 	bogoSort(myList);
-	std:time_t time_after = time(0);
-	std::time_t totalUserTime = time_after - time_now;
+	std::time_t time_after1 = time(0);
+	std::time_t totalBogoTime = time_after1 - time_now1;
 }
 
-void Game::userSort() {
+std::vector<int> Game::userSort() {
+	std::vector<int> inputs;
+	for (int i = 0; i < myList.size(); i++) {
+		int newNumber;
 
+		std::cout << "Entry [" << i << "] = ";
+		std::cin >> newNumber;
+		inputs.push_back(newNumber);
+	}
+
+	return inputs;
+}
+
+bool isSorted(std::vector<int> list) {
+	return (std::is_sorted(list.begin(), list.end()));
 }
 
 std::vector<int> Game::bogoSort(std::vector<int> list)
 {
 	std::vector<int> gameList = list;
-	while (!std::is_sorted(gameList.begin(), gameList.end()) ){
+	while (!isSorted(gameList) ){
 		gameList = sort(gameList);
 	}
 
