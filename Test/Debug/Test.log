@@ -1,0 +1,4 @@
+﻿  test.cpp
+c:\users\evan\source\repos\alphabogo\test\test.cpp(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\evan\source\repos\alphabogo\test\test.cpp(21): warning C4018: '<': signed/unsigned mismatch
+  Test.vcxproj -> C:\Users\Evan\source\repos\AlphaBogo\Debug\Test.exe

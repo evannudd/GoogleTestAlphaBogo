@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\evan\source\repos\alphabogo\alphabogo\main.cpp(13): warning C4018: '<': signed/unsigned mismatch
+  AlphaBogo.vcxproj -> C:\Users\Evan\source\repos\AlphaBogo\Debug\AlphaBogo.exe
